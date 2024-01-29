@@ -15,7 +15,7 @@ const Cart = () => {
       total += (item.unitPrice * item.quantity);
     })
     setTotalPrice(total);
-  }, cart);
+  }, [cart]);
 
   return (
     <>
