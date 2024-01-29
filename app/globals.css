@@ -318,6 +318,7 @@ html{
 @media screen and (max-width: 800px) {
   .banner-container{
   width: 90%;
+  height: 650px;
   padding: 25px;
   background: url('../public/assets/banner-bg.png') no-repeat;
   background-position: center;
