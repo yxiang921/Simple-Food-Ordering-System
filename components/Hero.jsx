@@ -19,9 +19,9 @@ const Hero = () => {
       <h1 className='hero-title'>Our Products</h1>
       <div className='hero-food-list'>
         {
-          foods.map((food, key) => {
+          foods.map((food) => {
             return <Food
-                      key={key}
+                      key={food.id}
                       foodID={food.id}
                       foodName={food.name}
                       foodPrice={food.unitPrice}

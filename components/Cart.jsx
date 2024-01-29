@@ -15,7 +15,7 @@ const Cart = () => {
       total += (item.unitPrice * item.quantity);
     })
     setTotalPrice(total);
-  }, [cart]);
+  });
 
   return (
     <>
@@ -27,9 +27,9 @@ const Cart = () => {
         </div>
 
         <div className='cart-items'>
-          {cart.map((item, key) => {
+          {cart.map((item) => {
             return <CartItem
-                    key={key}
+                    key={item.id}
                     productID={item.id} 
                     productName={item.name}
                     quantity={item.quantity}
