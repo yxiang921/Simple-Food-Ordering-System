@@ -11,7 +11,7 @@ const Cart = () => {
 
   useEffect(() => {
     let total = 0;
-    cart.map((item, key) => {
+    cart.map((item) => {
       total += (item.unitPrice * item.quantity);
     })
     setTotalPrice(total);
@@ -27,8 +27,9 @@ const Cart = () => {
         </div>
 
         <div className='cart-items'>
-          {cart.map((item) => {
+          {cart.map((item, key) => {
             return <CartItem
+                    key={key}
                     productID={item.id} 
                     productName={item.name}
                     quantity={item.quantity}
