@@ -318,7 +318,7 @@ html{
 @media screen and (max-width: 800px) {
   .banner-container{
   width: 90%;
-  height: 260px;
+  padding: 25px;
   background: url('../public/assets/banner-bg.png') no-repeat;
   background-position: center;
   background-size: cover;
@@ -326,7 +326,7 @@ html{
   padding-left: 25px;
   margin-top: 55px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
   }
